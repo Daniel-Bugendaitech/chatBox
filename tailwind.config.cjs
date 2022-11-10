@@ -15,9 +15,10 @@ module.exports = {
     extend: {
       colors: {
         // primary: '#00040f',
-        primary: '#59ABE3',
+        primary: '#F1CC59',
         // secondary: '#00f6ff',
-        secondary: '#FFDB58',
+        secondary: '#7D2AE8',
+        tertiary: '#4BA5CD',
         dimWhite: 'rgba(255, 255, 255, 0.7)',
         dimBlue: 'rgba(9, 151, 124, 0.1)',
       },

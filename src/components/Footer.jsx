@@ -24,14 +24,14 @@ const Footer = () => {
               key={footerLink.title}
               className={`flex flex-col my-4 ss:my-0 min-w-[150px]`}
             >
-              <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
+              <h4 className="font-medium text-[18px] leading-[27px] text-secondary">
                 {footerLink.title}
               </h4>
               <ul className="list-none mt-4">
                 {footerLink.links.map((link, index) => (
                   <li
                     key={link.name}
-                    className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
+                    className={`font-normal text-[16px] leading-[24px] text-[#a16be8] hover:text-black cursor-pointer ${
                       index !== footerLink.links.length - 1 ? 'mb-4' : 'mb-0'
                     }`}
                   >
@@ -45,11 +45,11 @@ const Footer = () => {
       </div>
 
       <div className="w-full flex justify-between items-center flex-col md:flex-row pt-6 border-t-[1px] border-t-[#3F3E45]">
-        <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
+        <p className="font-normal text-center text-[18px] leading-[27px] text-secondary">
           Copyright &copy; 2022 HooBank. All Rights Reserved.
         </p>
 
-        <div className="flex flex-row mt-6 md:mt-0">
+        <div className="flex flex-row mt-6 md:mt-0 ">
           {socialMedia.map((social, index) => (
             <img
               key={social.id}
@@ -57,7 +57,7 @@ const Footer = () => {
               alt={social.id}
               className={`w-[21px] h-[21px] object-contain cursor-pointer ${
                 index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'
-              }`}
+              } text-secondary`}
               onClick={() => window.open(social.link)}
             />
           ))}

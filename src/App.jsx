@@ -47,3 +47,4 @@ const App = () => {
 export default App;
 
 //object contain; gradient; semantic names; radial gradient;
+//corousal : zoom-in , zoomout, drawer menu

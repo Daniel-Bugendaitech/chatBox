@@ -14,16 +14,17 @@
 
 * {
   scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-gradient {
   background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
-      #def9fa 0.89%,
-      #bef3f5 17.23%,
-      #9dedf0 42.04%,
-      #7de7eb 55.12%,
-      #5ce1e6 71.54%,
-      #33bbcf 100%);
+      /* #a16be8 0.89%,
+      #7D2AE8 17.23%, */
+      rgb(95, 78, 146)42.04%,
+      rgb(71, 47, 141) 55.12%,
+      rgb(44, 19, 118) 71.54%,
+      rgb(63, 9, 225) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -98,8 +99,10 @@
 }
 
 .feature-card:hover {
-  background: var(--black-gradient);
+  /* background: var(--black-gradient); */
+  background: #a16be8;
   box-shadow: var(--card-shadow);
+  color : white;
 }
 
 .feedback-container .feedback-card:last-child {
@@ -111,6 +114,7 @@
 }
 
 .feedback-card:hover {
+  color : white;
   background: var(--black-gradient);
 }
 
