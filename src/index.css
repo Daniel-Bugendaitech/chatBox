@@ -132,3 +132,16 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+.fade_animation img {
+  animation: fadeAnimation 0.5s ease-out ;
+}
+
+@keyframes fadeAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
