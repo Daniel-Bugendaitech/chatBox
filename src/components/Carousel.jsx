@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import image1 from '../assets/villa1.jpg';
-import image2 from '../assets/villa4.jpg';
-import image3 from '../assets/villa6.jpg';
+import image1 from '../assets/slider1.png';
+import image2 from '../assets/slider2.png';
+import image3 from '../assets/slider3.png';
 import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from 'react-icons/ai';
 
 const sliderImages = [image1, image2, image3];
@@ -18,17 +18,16 @@ const Carousel = () => {
     slideRef.current.classList.remove('fade_animation');
   };
 
-  useEffect(() => {
-    slideRef.current.addEventListener('animationend', removeAnimation);
-    slideRef.current.addEventListener('mouseenter', pauseSlider);
-    slideRef.current.addEventListener('mouseleave', startSlider);
+  // useEffect(() => {
+  //   slideRef.current.addEventListener('animationend', removeAnimation);
+  //   slideRef.current.addEventListener('mouseenter', pauseSlider);
+  //   slideRef.current.addEventListener('mouseleave', startSlider);
 
-    startSlider();
-    return () => {
-      pauseSlider();
-    };
-    // eslint-disable-next-line
-  }, []);
+  //   startSlider();
+  //   return () => {
+  //     pauseSlider();
+  //   };
+  // }, []);
 
   const startSlider = () => {
     slideInterval = setInterval(() => {
@@ -52,11 +51,16 @@ const Carousel = () => {
     slideRef.current.classList.add('fade_animation');
   };
 
-  console.log(slideRef);
+  // console.log(slideRef);
   return (
     <div ref={slideRef} className="w-full select-none relative">
-      <div className="aspect-w-16 aspect-h-9">
-        <img src={sliderImages[currentIndex]} alt="" />
+      <div className=" aspect-[16/9]">
+        <img
+          src={sliderImages[currentIndex]}
+          alt=""
+          className=""
+          height="300"
+        />
       </div>
 
       <div className="absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">

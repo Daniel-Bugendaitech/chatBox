@@ -9,7 +9,6 @@ import {
 import { FaProductHunt } from 'react-icons/fa';
 import { BiGroup } from 'react-icons/bi';
 import { MdOutlineFeaturedVideo } from 'react-icons/md';
-// import { MdCompareArrows } from 'react-icons/md';
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);

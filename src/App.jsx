@@ -12,6 +12,7 @@ import {
   Footer,
   Testimonials,
   Hero,
+  Accordion,
 } from './components';
 import Sidebar from './components/Sidebar';
 
@@ -40,6 +41,7 @@ const App = () => {
         <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
             <Stats />
+            <Accordion />
             <Business />
             <Billing />
             <CardDeal />

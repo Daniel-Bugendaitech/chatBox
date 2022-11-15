@@ -34,6 +34,9 @@ module.exports = {
       lg: '1200px',
       xl: '1700px',
     },
+    aspectRatio: {
+      '16/9': '16 / 9',
+    },
   },
   plugins: [],
 };

@@ -210,3 +210,24 @@ export const clients = [
     logo: dropbox,
   },
 ];
+
+export const accordion = [
+  {
+    id: 1,
+    question: 'What is react ?',
+    answer:
+      'React is a open-sorce front-end javascript library for building user iterfaces ',
+  },
+  {
+    id: 2,
+    question: 'What is Javascript ?',
+    answer:
+      'JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions',
+  },
+  {
+    id: 3,
+    question: 'What is tailwind css ?',
+    answer:
+      'Tailwind css is a utility-first css framework for rapidly building user interface',
+  },
+];
