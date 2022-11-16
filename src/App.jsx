@@ -13,15 +13,16 @@ import {
   Testimonials,
   Hero,
   Accordion,
+  Contact,
 } from './components';
 import Sidebar from './components/Sidebar';
 
 const App = () => {
   return (
     <div className="bg-primary w-full overflow-hidden flex">
-      <div>
+      {/* <div>
         <Sidebar />
-      </div>
+      </div> */}
       <div>
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
@@ -48,6 +49,7 @@ const App = () => {
             <Testimonials />
             <Clients />
             <CTA />
+            <Contact />
             <Footer />
           </div>
         </div>

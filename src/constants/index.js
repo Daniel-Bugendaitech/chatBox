@@ -21,6 +21,10 @@ export const navLinks = [
     title: 'Home',
   },
   {
+    id: 'about',
+    title: 'About',
+  },
+  {
     id: 'features',
     title: 'Features',
   },
@@ -229,5 +233,32 @@ export const accordion = [
     question: 'What is tailwind css ?',
     answer:
       'Tailwind css is a utility-first css framework for rapidly building user interface',
+  },
+];
+
+export const contacts = [
+  {
+    id: 1,
+    label: 'Name',
+    placeholder: 'Name',
+    type: 'text',
+  },
+  {
+    id: 2,
+    label: 'Email',
+    placeholder: 'Email',
+    type: 'text',
+  },
+  {
+    id: 3,
+    label: 'Phone',
+    placeholder: 'Phone',
+    type: 'number',
+  },
+  {
+    id: 4,
+    label: 'Message',
+    placeholder: 'Message',
+    type: 'text',
   },
 ];
