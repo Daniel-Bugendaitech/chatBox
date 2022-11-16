@@ -13,7 +13,7 @@ import {
   Testimonials,
   Hero,
   Accordion,
-  Contact,
+  // Contact,
 } from './components';
 import Sidebar from './components/Sidebar';
 
@@ -49,7 +49,6 @@ const App = () => {
             <Testimonials />
             <Clients />
             <CTA />
-            <Contact />
             <Footer />
           </div>
         </div>
